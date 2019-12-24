@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*overflow-x: hidden;*/
+}
+
+body{
+  background-color: #f5f0e3;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/****NAV BAR****/
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  border-bottom: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #83b582;
+}
+
+.timnastics{
+  width: 17%;
+  margin-left: 15%;
+  padding: 5px;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  height: 90vh;
+  top: 10vh;
+/*  background-color: 007944;*/
+  background-color: #83b582;
+  transform: translatey(-120%);
+  transition: transform 0.5s ease-in;
+  /*z-index: -1;*/
+}
+
+.nav-links a{
+  display: ;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.nav-links a:hover{
+  color: #f5f0e3;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+nav ul li{
+  /*position: relative;*/
+}
+
+nav ul li ul{
+  position: absolute;
+  background: #007944;
+  display: none;
+  border-radius: 25px;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul li ul li{
+  display: block;
+  width: 100px;
+  padding: 10px;
+}
+
+.burger{
+  cursor: pointer;
+  margin-right: 15%;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+.nav-active{
+  transform: translatey(0%);
+}
+
+/****CAROUSEL****/
+.carousel-container{
+  width: 50%;
+  margin: 40px auto auto auto;
+  border: 5px solid #83b582;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: -2;
+}
+
+#prevBtn{
+  position: absolute;
+  top: 50%;
+  z-index: ;
+  left: 5%;
+  font-size: 30px;
+  color: #83b582;
+  cursor: pointer;
+}
+
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: ;
+  right: 5%;
+  font-size: 30px;
+  color: #83b582;
+  cursor: pointer;
+}
+
+.girls{
+  width: 100%
+}
+
+/****CARDS****/
+.card{
+  margin-top: 7%;
+  margin-bottom: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #83b582;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  bottom: 0;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.more-info{
+  text-decoration: none;
+  color: white;
+}
+
+/****FOOTER****/
+.footer{
+  text-align: center;
+  color: black;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 1px solid black;
+  min-height: 10vh;
+  bottom: 0;
+  width: 100%;
+  background-color: #83b582;
+  font-weight: bold;
+
+}
+
+.info{
+  padding-top:4%;
+  padding-bottom: 4%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+/****TESTIMONIALS****/
+.quotes{
+  margin: 5% 35%;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.quote1 i{
+  font-size: 30px;
+  color: gold;
+
+}
+
+.quote2 i{
+  font-size: 30px;
+  color: orange;
+
+}
+
+.name{
+  text-align: center;
+}
+
+
+/****About Page****/
+.about-pg{
+  line-height: 2;
+  font-weight: bold;
+  text-align: center;
+  margin: 5% 7%;
+  font-size: 18px
+}
+
+.tim-photo{
+  width: 50%;
+  margin: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/****Clinics****/
+.clinics{
+  text-decoration: none;
+  color: #007944;
+}
+.clinics:hover{
+  color: #83b582;
+}
+
+.hr{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.spotting-photo{
+  width: 50%;
+  margin: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: rotate(90deg);
+}
+
+/****Contact Page****/
+.submit-btn{
+  font-size: 18px;
+  background-color: #83b582;
+  padding: 10px 28px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.submit-btn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+
+}
+
+
+
+
+
+/****MEDIA QUERY***/
+@media screen and (max-width:1000px) {
+  .nav-links{
+    width: 50%;
+  }
+
+  .carousel-container{
+    display: none;
+  }
+
+  .card{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1{
+    margin-bottom: 7%;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.75;
+  }
+
+  .timnastics{
+    width: 35%;
+  }
+
+  .tim-photo{
+    width: 70%;
+  }
+
+  .spotting-photo{
+    width: 70%;
+    margin: 10%;
+  }
+
+  .quotes{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
